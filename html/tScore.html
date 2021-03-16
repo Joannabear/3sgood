@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>參S數位學習網</title>
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/tScore.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#threeLine').click(function() {
+                $('#menu').slideToggle().addClass("show");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="win">
+        <div id="title">
+            <div id="logo_title">
+                <div id="pic_3">
+                    <img id="plane3" src="../sourcesImage/logo.png" alt="">
+                </div>
+                <h1 id="h1">參S數位學習網</h1>
+            </div>
+            <div id="pic_menu">
+                <img id="threeLine" src="../sourcesImage/threeLine.png" alt="">
+            </div>
+            <div id="menu">
+                <div id="board">佈告欄</div>
+                <div id="roll">點名</div>
+                <div id="point">成績單</div>
+                <div id="video">補帶</div>
+                <div id="message">私訊</div>
+                <div id="practice">課後練習</div>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div id="banner">
+                <input id="date" type="date">
+                <input id="ok_btn" class="btn" type="button" value="確認" onclick="sub()" />
+                <input id="renew_btn" class="btn" type="button" value="更新" onclick="sub()" />
+                <input id="submit_btn" class="btn" type="submit" value="提交" onclick="sub()" />
+                
+                
+                <select name="" id="subject">
+                    <option value="">國文</option>
+                    <option value="">英文</option>
+                    <option value="">數學</option>
+                </select>
+                <select name="" id="grade">
+                    <option value="">國一</option>
+                    <option value="">國二</option>
+                    <option value="">國三</option>
+                </select>
+            </div>
+            <div id="socre_win">
+                <div class="socre_win_title">
+                    <p class="word_style">姓名</p>
+                </div>
+                <div class="socre_win_title">
+                    <p class="word_style">分數</p>
+                </div>
+                <div class="socre_win_content">
+                    <p class="word_style">王小明</p>
+                </div>
+                <div class="socre_win_content">
+                    <input type="text" class="box_style" readonly>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
